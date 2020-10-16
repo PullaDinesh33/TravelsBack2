@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <style>
+
+
+ 
+      
+      /* header styling */ 
+      h1 { 
+          color: green; 
+      } 
+      /* pagination position styling */ 
+        
+      .pagination_section { 
+          position: absolute; 
+          top: 500px; 
+          right: 230px; 
+      } 
+      /* pagination styling */ 
+        
+      .pagination_section a { 
+          color: black; 
+          padding: 10px 18px; 
+          text-decoration: none; 
+      } 
+      /* pagination hover effect on non-active */ 
+        
+      .pagination_section a:hover:not(.active) { 
+          background-color: #031F3B; 
+          color: white; 
+      } 
+      /* pagination hover effect on active*/ 
+        
+      a:nth-child(5) { 
+          background-color: green; 
+          color: white; 
+      } 
+        
+      a:nth-child(1) { 
+          font-weight: bold; 
+      } 
+        
+      a:nth-child(7) { 
+          font-weight: bold; 
+      } 
+        
+      .content { 
+          margin: 50px; 
+          padding: 15px; 
+          width: 700px; 
+          height: 200px; 
+          border: 2px solid black; 
+      } 
+
+ 
+
+    </style>
+
+</head>
+<body style="background-color: whitesmoke;">
+    
+  
+    <div id="t" style="border: 0px solid;height: 500px;width: 600px;margin-left: 550px;background-color: whitesmoke;margin-right: 25px;margin-top: 30px;">
+       
+        <center> 
+  
+            <!-- Header and Slogan -->
+            <b style="color: black;font-size: 30px;margin-right: 140px;">Travelling Adventure</b> <hr>
+            
+        </center>
+        <b style="color: black;font-size: 30px;">How many peoples are Travelling?</b><br><br>
+        <b style="color: black;font-size: 30px;">(Including your self)</b><br><br>
+            <br><br><br><br><br><br>
+            <div style="margin-left: 50px;margin-top: -75px;">
+            <label>Adult</label>
+            <select class="selectpicker" 
+                data-style="btn-success" style="margin-left: 100px;"> 
+                <option>Select One</option> 
+
+                <option>1</option> 
+                <option>2</option> 
+                <option>3</option> 
+                <option>4</option> 
+            </select> 
+        
+            <br><br>
+            <label>Children (under 18)</label>
+            <select class="selectpicker" 
+                data-style="btn-success"> 
+                <option>Select One</option> 
+
+                <option>1</option> 
+                <option>2</option> 
+                <option>3</option> 
+                <option>4</option> 
+            </select> 
+        </div>
+        </div>
+        <!-- pagination elements -->
+        <div class="pagination_section" style="margin-right: 300px;margin-top: 90px;background-color: whitesmoke;height: 50px;"> 
+            <a href="#"><< Previous</a> 
+            <a href="places.html" title="Algorithm">1</a> 
+            <a href="people.html" title="DataStructure">2</a> 
+            <a href="place.html" title="Languages">3</a> 
+            <a href="completed.html" title="Interview">4</a> 
+            <a href="travelling.html" title="practice">5</a> 
+            <a href="#">Next >></a> 
+        </div> 
+    
+</body>
+</html>

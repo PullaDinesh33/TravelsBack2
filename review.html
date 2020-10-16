@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+    .dot {
+        height: 25px;
+        width: 25px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        margin-top: 15px;
+      }
+      #main{
+  overflow: auto;
+  width: 1160px;
+  height: 610px;
+
+      }
+ 
+
+      .default {
+  border-color: #e7e7e7;
+  color: black;
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+
+.default:hover {
+  background: #e7e7e7;
+
+}
+.cars{
+    border-color: #e7e7e7;
+  color: black;
+  border-radius: 5px;
+  border: 1px solid black;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: white;
+  padding: 5px;
+}
+.v{
+border-left: 5px solid black;
+height: 500px;
+position: absolute;
+left: 75%;
+  margin-left: -3px;
+  top: 90px;
+
+}
+
+#reviewlogo img {
+  border-radius: 50%;
+}
+#reviewlogo .dot {
+  height: 15px;
+  width: 15px;
+  background-color: green;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+
+    </style>
+</head>
+<body>
+    <div id="main">
+    <table style="min-height: 920px;">
+        <tr>
+           <td style="background-color:white;min-width: 750px;border: 0px solid;">
+         <div id="logo" style="border: 0px solid;width: 130px;height: 130px;margin-top: -5px;">
+       <img src="assets/image/1.jpeg" style="width: 130px;height: 130px;margin-left: 100px;margin-top: 10px;border-radius: 5px;">
+        </div>
+         <div id="name" style="border: 0px solid;width: 630px;height: 130px;margin-top: -130px;margin-left: 150px;">
+       
+            <div style="margin-top: 30px;">
+            <h4>The View Oceanside Grill </h4>
+        <p>70 Church Street, Nanaimo, British Columbia V9R 5H4, Canada </p>
+            </div>
+        </div>
+        <br><br>
+        <h4>Your first-hand experiences really help other travellers. Thanks!
+        </h4>
+       <hr><br>
+       <h3>Your overall rating of this restaurant
+    </h3>
+
+    <div style="margin-top: 2px;margin-right: 330px;border: 0px solid;">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+<button class="btn default" style="margin-right: 50px;margin-top: -70px;background-color: green;color: white;">Click To Rate</button>
+
+<br><br>
+
+<div class="form-group shadow-textarea">
+    <label for="exampleFormControlTextarea6" style="margin-right:600px;">Title of your review</label>
+    <textarea class="form-control z-depth-1" style="height: 55px;" id="exampleFormControlTextarea6" rows="3" placeholder="Write something here..."></textarea>
+  </div>
+  
+<div class="form-group shadow-textarea">
+    <label for="exampleFormControlTextarea6" style="margin-right:630px;">your review</label>
+    <textarea class="form-control z-depth-1" style="height: 95px;" id="exampleFormControlTextarea6" rows="3" placeholder="Write something here..."></textarea>
+  </div>
+  
+<b>What sort of visit was this?
+</b><br>
+<button class="btn default">Friends</button>
+<button class="btn default">Family</button>
+<button class="btn default">Solo</button>
+<button class="btn default">Business</button>
+<button class="btn default">Couples</button>
+<br><br>
+
+<b>Were you here for...</b><br>
+
+<select class="cars" id="cars">
+  <option value="volvo">Select One</option>
+  <option value="saab">Breakfast</option>
+  <option value="mercedes">Lunch</option>
+  <option value="audi">Dinner</option>
+</select><br>
+<b>When did you visit?</b><br>
+
+<select class="cars" id="cars">
+    <option value="volvo">Select one</option>
+    <option value="saab">september 2020</option>
+    <option value="mercedes">october 2020</option>
+    <option value="audi">november 2020</option>
+  </select>
+<br>
+<hr>
+<b>Could you say a little more about it? (optional)
+</b>
+<hr>
+
+<div style="border: 0px solid;">
+
+    <p style="margin-right: 250px;">Was restaurant staff required to<span style="color: green;">wear masks in public areas?</span>
+    </p>
+    <div style="margin-left: 500px;border: 0px solid;margin-top: -50px;">
+    <button class="btn default" class="ab">Yes</button>
+    <button class="btn default" class="ab">No</button>
+    <button class="btn default" class="ab">Not Sure</button>
+     </div>
+</div>
+<br>
+
+<div style="border: 0px solid;">
+
+    <p style="margin-right: 250px;">Do you know if the tables were 
+        <span style="color: green;"> disinfected between each set of guests?</span>
+    </p>
+    <div style="margin-left: 500px;border: 0px solid;margin-top: -50px;">
+    <button class="btn default" class="ab">Yes</button>
+    <button class="btn default" class="ab">No</button>
+    <button class="btn default" class="ab">Not Sure</button>
+     </div>
+</div>
+<br>
+<div style="border: 0px solid;">
+
+    <p style="margin-right: 250px;">Did this restaurant offer 
+        <span style="color: green;"> contactless ordering?</span>
+    </p>
+    <div style="margin-left: 500px;border: 0px solid;margin-top: -50px;">
+    <button class="btn default" class="ab">Yes</button>
+    <button class="btn default" class="ab">No</button>
+    <button class="btn default" class="ab">Not Sure</button>
+     </div>
+</div>
+
+<br>
+<div style="border: 0px solid;">
+
+    <p style="margin-right: 250px;">Can a gluten free person get a good meal at this restaurant?
+
+    </p>
+    <div style="margin-left: 500px;border: 0px solid;margin-top: -50px;">
+    <button class="btn default" class="ab">Yes</button>
+    <button class="btn default" class="ab">No</button>
+    <button class="btn default" class="ab">Not Sure</button>
+     </div>
+</div>
+
+<br>
+<div style="border: 0px solid;">
+
+    <p style="margin-right: 250px;">Is this restaurant good for business 
+        <span style="color: green;">meetings?</span>
+    </p>
+    <div style="margin-left: 500px;border: 0px solid;margin-top: -50px;">
+    <button class="btn default" class="ab">Yes</button>
+    <button class="btn default" class="ab">No</button>
+    <button class="btn default" class="ab">Not Sure</button>
+     </div>
+</div>
+
+<br>
+<div style="border: 0px solid;">
+
+    <p style="margin-right: 250px;">Is this a <span style="color: green;">Canadian </span> restaurant?
+
+    </p>
+    <div style="margin-left: 500px;border: 0px solid;margin-top: -50px;">
+    <button class="btn default" class="ab">Yes</button>
+    <button class="btn default" class="ab">No</button>
+    <button class="btn default" class="ab">Not Sure</button>
+     </div>
+</div>
+
+<br>
+<div style="border: 0px solid;">
+
+    <p style="margin-right: 250px;">Is this restaurant 
+        <span style="color: green;">family-friendly?</span>
+    </p>
+    <div style="margin-left: 500px;border: 0px solid;margin-top: -50px;">
+    <button class="btn default" class="ab">Yes</button>
+    <button class="btn default" class="ab">No</button>
+    <button class="btn default" class="ab">Not Sure</button>
+     </div>
+</div>
+
+<br>
+<div style="border: 0px solid;">
+
+    <p style="margin-right: 250px;">Does this restaurant 
+        <span style="color: green;">serve alcohol?</span>
+    </p>
+    <div style="margin-left: 500px;border: 0px solid;margin-top: -50px;">
+    <button class="btn default" class="ab">Yes</button>
+    <button class="btn default" class="ab">No</button>
+    <button class="btn default" class="ab">Not Sure</button>
+     </div>
+</div>
+
+<br>
+<div style="border: 0px solid;">
+
+    <p style="margin-right: 250px;">Is this restaurant 
+        <span style="color: green;">romantic?</span>
+    </p>
+    <div style="margin-left: 500px;border: 0px solid;margin-top: -50px;">
+    <button class="btn default" class="ab">Yes</button>
+    <button class="btn default" class="ab">No</button>
+    <button class="btn default" class="ab">Not Sure</button>
+     </div>
+</div>
+<br>
+<b style="margin-right: 200px;">Click to select a rating
+</b>
+
+<div style="margin-top: 2px;margin-right: 330px;border: 0px solid;">
+   
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+<button class="btn default" style="margin-right: 50px;margin-top: -70px;background-color: green;color: white;">Service</button>
+
+<br><br>
+<div style="margin-top: 2px;margin-right: 330px;border: 0px solid;">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+<button class="btn default" style="margin-right: 50px;margin-top: -70px;background-color: green;color: white;">Food</button>
+
+<br><br>
+<div style="margin-top: 2px;margin-right: 330px;border: 0px solid;">
+   <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+<button class="btn default" style="margin-right: 50px;margin-top: -70px;background-color: green;color: white;">Value</button>
+
+<br><br>
+
+<b>How expensive is this restaurant? <br>
+</b><br>
+<button class="btn default" class="ab">Cheap Eats</button>
+<button class="btn default" class="ab">Mid-Range</button>
+<button class="btn default" class="ab">Cost</button>
+
+
+<br>
+
+<div class="form-group shadow-textarea">
+    <label for="exampleFormControlTextarea6" style="margin-right:500px;">What dish do you recommend?</label>
+    <textarea class="form-control z-depth-1" style="height: 55px;" id="exampleFormControlTextarea6" rows="3" placeholder="Write something here..."></textarea>
+  </div>
+
+<br>
+<h3>Do you have photos to share? (optional)
+</h3><hr>
+<button type="button" class="btn btn-outline-primary">Add Photo</button>
+
+<br><br>
+<b>Submit your review
+</b>
+<input type="checkbox">
+<p>I certify that this review is based on my own experience and is my genuine opinion of this restaurant, and that I have no personal or business relationship with this establishment, and have not been offered any incentive or payment originating from the establishment to write this review. I understand that Tripadvisor has a zero-tolerance policy on fake reviews. <span style="color:blue;">Learn more</span></p>
+<br>
+<button type="button" class="btn btn-outline-primary">Submit Your Review</button>
+
+</td>
+      <div class="v">
+        <td style="background-color:white;min-width: 380px;border: 0px solid;">
+          <div style="border: 0px solid;width: 350px;margin-top: -1120px;">
+            <b>Recent reviews of this restaurant
+            </b><br><br>
+            <div id="reviewlogo" >
+              
+              <img src="assets/image/download.png" alt="Avatar" style="width:50px;margin-right:200px;">
+              <div><br>
+              <p style="margin-right: 180px;color: orangered;margin-left: 110px;margin-top: -65px;">Ram</p><br>
+             <div style="margin-top: -35px;">
+              <span class="dot"></span>
+               <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+             <span><strong>"Dinner Out Celebrating"</strong></span>
+           <p>Awesome salad and dinner.very friendly staff.able to accommodate special request.very good restaurent.</p>
+          <b style="margin-left: 160px;">Oct 14,2020  12:50:06</b>
+          </div>
+         </div>
+        </div>
+        </div>
+      <hr>
+
+
+
+      <div id="reviewlogo" >
+              
+        <img src="assets/image/download.png" alt="Avatar" style="width:50px;margin-right:200px;">
+        <div><br>
+        <p style="margin-right: 180px;color: orangered;margin-left: 110px;margin-top: -65px;">Charan</p><br>
+       <div style="margin-top: -35px;">
+        <span class="dot"></span>
+         <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+       <span><strong>"Dinner Out Celebrating"</strong></span>
+     <p>Awesome salad and dinner.very friendly staff.able to accommodate special request.<br>very good restaurent.</p>
+    <b style="margin-left: 160px;">Oct 15,2020  01:50:06</b>
+    </div>
+   </div>
+  </div>
+  </div>
+<hr>
+
+<div id="reviewlogo" >
+              
+  <img src="assets/image/download.png" alt="Avatar" style="width:50px;margin-right:200px;">
+  <div><br>
+  <p style="margin-right: 180px;color: orangered;margin-left: 110px;margin-top: -65px;">Ram</p><br>
+ <div style="margin-top: -35px;">
+  <span class="dot"></span>
+   <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+ <span><strong>"Dinner Out Celebrating"</strong></span>
+<p>Awesome salad and dinner.very friendly staff.able to accommodate special request.very good restaurent.</p>
+<b style="margin-left: 160px;">Oct 14,2020  12:50:06</b>
+</div>
+</div>
+</div>
+</div>
+<hr>
+
+<div id="reviewlogo" >
+              
+  <img src="assets/image/download.png" alt="Avatar" style="width:50px;margin-right:200px;">
+  <div><br>
+  <p style="margin-right: 180px;color: orangered;margin-left: 110px;margin-top: -65px;">Raghu</p><br>
+ <div style="margin-top: -35px;">
+  <span class="dot"></span>
+   <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+ <span><strong>"Dinner Out Celebrating"</strong></span>
+<p>Awesome salad and dinner.very friendly staff.able to accommodate special request.<br>very good restaurent.</p>
+<b style="margin-left: 160px;">Oct 14,2020  12:50:06</b>
+</div>
+</div>
+</div>
+</div>
+<hr>
+<a href="###" style="margin-left: 105px;">More Items</a>
+
+        
+     
+
+
+
+        </td>
+    </div>
+
+    
+  </tr>
+</table>
+
+</div>
+</body>
+</html>
